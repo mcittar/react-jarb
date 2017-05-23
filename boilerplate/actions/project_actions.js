@@ -1,10 +1,10 @@
 import * as APIUtil from '../util/projects_api_util';
 export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
-export const RECEIVE_PROJECT = 'RECEIVE_PROJECT';
+export const RECIEVE_GIF = 'RECIEVE_GIF';
 
 export const scrapeProject = () => dispatch => (
   APIUtil.scrapeProjects()
-    .then((projects) => (dispatch(receiveProject(projects))))
+    .then((gif) => (dispatch(receiveGif(gif))))
     .fail((errors) => (dispatch(receiveErrors(errors.responseJSON))))
 );
 
@@ -13,7 +13,7 @@ export const receiveErrors = errors => ({
     errors
 });
 
-export const receiveProject = project => ({
-  type: RECEIVE_PROJECT,
-  project
+export const receiveGif = gif => ({
+  type: RECIEVE_GIF,
+  gif
 });
