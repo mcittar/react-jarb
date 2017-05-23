@@ -1,6 +1,6 @@
 {
   "name": "react-jarb",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mcittar/react-jarb/issues"
   },
-  "homepage": "https://github.com/mcittar/react-jarb#readme"
+  "homepage": "https://github.com/mcittar/react-jarb#readme",
+  "engines": {
+    "node": ">=4.2.4"
+  }
 }
