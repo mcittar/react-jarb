@@ -1,0 +1,19 @@
+{
+  "name": "react-jarb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcittar/react-jarb.git"
+  },
+  "author": "Michael Cittar <mcittar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcittar/react-jarb/issues"
+  },
+  "homepage": "https://github.com/mcittar/react-jarb#readme"
+}
