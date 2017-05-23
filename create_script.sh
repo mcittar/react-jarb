@@ -30,6 +30,4 @@ done
 echo "Creating files"
 # move files from store location to correct director location
 
-ls -la
-
 echo "Done."
