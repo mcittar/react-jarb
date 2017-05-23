@@ -5,7 +5,7 @@ class Gif extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.props.updateGif();
   }
 
@@ -13,7 +13,7 @@ class Gif extends React.Component {
 
     return(
       <section>
-
+        { this.props.gif }
       </section>
     );
   }
