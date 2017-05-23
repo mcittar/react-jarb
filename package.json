@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/mcittar/react-jarb.git"
   },
-  "author": "Michael Cittar <mcittar@gmail.com>",
+  "author": "Michael Cittar and Steve Olsen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mcittar/react-jarb/issues"
