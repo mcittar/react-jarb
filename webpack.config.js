@@ -25,8 +25,7 @@ module.exports = {
   context: __dirname,
   entry: './boilerplate/app.js',
   output: {
-    path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
-    filename: 'bundle.js'
+    filename: './boilerplate/bundle.js'
   },
   resolve: {
     extensions: ['.js', '.jsx', '*']

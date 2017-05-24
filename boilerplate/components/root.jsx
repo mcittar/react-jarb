@@ -1,17 +1,17 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router-dom';
+import { HashRouter, Route, IndexRoute, hashHistory } from 'react-router-dom';
 import Main from './main.jsx';
 
 const Root = ({ store }) => {
 
   return (
     <Provider store={ store }>
-      <Router history={ hashHistory }>
-        <Route path='/' component={ Main }>
-
-        </Route>
-      </Router>
+      <HashRouter history={ hashHistory }>
+        <div>
+          <Route path='/' component={ Main }></Route>
+        </div>
+      </HashRouter>
     </Provider>
   );
 };
