@@ -10,10 +10,13 @@ class Gif extends React.Component {
   }
 
   render() {
-
+    let gif;
+    if (this.props.gif.data){
+      gif = <img src={ this.props.gif.data.image_url }></img>;
+    }
     return(
       <section>
-        { this.props.gif }
+        { gif }
       </section>
     );
   }

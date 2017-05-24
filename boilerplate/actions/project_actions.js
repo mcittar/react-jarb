@@ -1,6 +1,6 @@
 import * as APIUtil from '../util/project_api_util';
 export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
-export const RECIEVE_GIF = 'RECIEVE_GIF';
+export const RECEIVE_GIF = 'RECEIVE_GIF';
 
 export const scrapeGif = () => dispatch => (
   APIUtil.scrapeGif()
@@ -14,6 +14,6 @@ export const receiveErrors = errors => ({
 });
 
 export const receiveGif = gif => ({
-  type: RECIEVE_GIF,
+  type: RECEIVE_GIF,
   gif
 });
