@@ -1,9 +1,10 @@
 import Gif from './gif';
 import { connect } from 'react-redux';
-import { scrapeGif } from '../../actions/project_actions';
+import { scrapeGif } from '../actions/project_actions';
 
 const mapStateToProps = state => ({
-  gif: state.gif
+  gif: state.gif,
+  state: state
 });
 
 const mapDispatchToProps = dispatch => ({
