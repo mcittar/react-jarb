@@ -20,10 +20,6 @@
   "engines": {
     "node": ">=4.2.4"
   },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.4.1"
-  },
   "dependencies": {
     "@rtorr/ajax-only": "^1.0.4",
     "babel-core": "^6.24.1",
