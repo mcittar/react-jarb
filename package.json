@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
+  "bin": "./create_script",
   "scripts": {
     "test": "mocha --reporter spec",
     "boilerplate": "node_modules/react-jarb/create_script"
