@@ -6,6 +6,14 @@ if [ "$1" == "fresh" ]; then
   rm -r frontend
 fi
 
+echo "Installing dependencies"
+declare -a packages=("@rtorr/ajax-only" "babel-core" "babel-loader" "babel-preset-es2015"
+"babel-preset-react" "react" "react-dom" "react-redux" "react-router-dom" "redux" "redux-thunk" "webpack")
+
+for i in "${packages[@]}"
+do
+  npm install "$i" --save
+done
 
 # creates all the folders under the main folder frontend
 echo "Creating folders"
