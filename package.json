@@ -6,7 +6,8 @@
   "bin": "./create_script",
   "scripts": {
     "test": "mocha --reporter spec",
-    "boilerplate": "node_modules/react-jarb/create_script"
+    "boilerplate": "node_modules/react-jarb/create_script",
+    "postinstall": "npmAddScript -k boilerplate -v 'node_modules/react-jarb/create_script'"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/mcittar/react-jarb#readme",
   "engines": {
     "node": ">=4.2.4"
+  },
+  "dependencies": {
+    "npm-add-script": "^1.1.0"
   }
 }
