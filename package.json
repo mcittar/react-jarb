@@ -1,9 +1,10 @@
 {
   "name": "react-jarb",
-  "version": "0.0.5",
-  "description": "",
+  "version": "0.0.7",
   "main": "index.js",
-  "bin": "./create_script",
+  "bin": {
+    "react-jarb": "./create_script"
+  },
   "scripts": {
     "test": "mocha --reporter spec",
     "boilerplate": "node_modules/react-jarb/create_script",
@@ -24,5 +25,13 @@
   },
   "dependencies": {
     "npm-add-script": "^1.1.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.1"
+  },
+  "keywords": [],
+  "description": ""
 }
