@@ -20,5 +20,5 @@
   "homepage": "https://github.com/mcittar/react-jarb#readme",
   "engines": {
     "node": ">=4.2.4"
-  },
+  }
 }
