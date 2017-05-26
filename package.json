@@ -7,7 +7,6 @@
   },
   "scripts": {
     "test": "mocha --reporter spec",
-    "boilerplate": "node_modules/react-jarb/create_script",
     "postinstall": "npmAddScript -k boilerplate -v 'node_modules/react-jarb/create_script'"
   },
   "repository": {
