@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "mocha --reporter spec",
-    "postinstall": "json -I -f package.json -e 'this.scripts={\"boilerplate\": \"bash node_modules/react-jarb/create_script\"}'",
+    "postinstall": "json -I -f package.json -e 'this.scripts={\"boilerplate\": \"bash node_modules/react-jarb/create_script\"}'"
   },
   "repository": {
     "type": "git",
