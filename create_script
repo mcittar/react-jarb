@@ -25,7 +25,6 @@ do
   fi
 done
 
-
 # move files from store location to correct director location
 echo "Creating files"
 for entry in "node_modules/react-jarb/boilerplate"/*;
