@@ -1,13 +1,14 @@
 {
   "name": "react-jarb",
-  "version": "0.0.10",
+  "version": "0.0.20",
   "main": "index.js",
   "bin": {
     "react-jarb": "./create_script"
   },
   "scripts": {
     "test": "mocha --reporter spec",
-    "postinstall": "node test.js"
+    "postinstall": "node test.js",
+    "boilerplate": "react-jarb"
   },
   "repository": {
     "type": "git",
