@@ -27,6 +27,7 @@ done
 
 # move files from store location to correct director location
 echo "Creating files"
+cp "node_modules/react-jarb/webpack.config.js" ""
 for entry in "node_modules/react-jarb/boilerplate"/*;
 do
   if [ -d "$entry" ]; then
