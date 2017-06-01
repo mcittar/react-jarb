@@ -1,7 +1,7 @@
 import { RECEIVE_GIF } from '../actions/project_actions';
 import merge from 'lodash/merge';
 
-const ProjectsReducer = (state = {}, action) => {
+const GifsReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type){
     case RECEIVE_GIF:
@@ -11,4 +11,4 @@ const ProjectsReducer = (state = {}, action) => {
   }
 };
 
-export default ProjectsReducer;
+export default GifsReducer;

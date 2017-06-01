@@ -6,8 +6,8 @@
     "react-jarb": "./create_script"
   },
   "scripts": {
-    "test": "mocha --reporter spec",
-    "postinstall": "node test.js",
+    "test": "jest",
+    "postinstall": "node add_script.js",
     "boilerplate": "react-jarb"
   },
   "repository": {
@@ -43,8 +43,9 @@
     "test": "test"
   },
   "devDependencies": {
+    "enzyme": "^2.8.2",
     "jest": "^20.0.4",
-    "mocha": "^3.4.1"
+    "redux-mock-store": "^1.2.3"
   },
   "keywords": [],
   "description": ""
