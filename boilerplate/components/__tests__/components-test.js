@@ -11,8 +11,7 @@ const testStore = mockStore({ gif });
 
 describe('gif container', () => {
   let gifWrapper,
-      reviewRating,
-      reviewBody;
+      actualGif;
 
   describe('creating a new gif', () => {
     beforeEach(() => {
@@ -20,10 +19,8 @@ describe('gif container', () => {
         <GifContainer store={testStore} />
       ).find('Gif');
 
-      reviewRating = gifWrapper.find('input').filterWhere(input => (
-        input.props().type === 'number'
-      ));
-      reviewBody = gifWrapper.find('textarea');
+      actualGif = gifWrapper.find('gif');
+
     });
   });
 });
