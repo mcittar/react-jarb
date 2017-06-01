@@ -43,6 +43,7 @@
     "test": "test"
   },
   "devDependencies": {
+    "jest": "^20.0.4",
     "mocha": "^3.4.1"
   },
   "keywords": [],
