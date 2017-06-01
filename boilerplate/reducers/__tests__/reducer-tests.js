@@ -46,8 +46,30 @@ const gif2 = { data: {
 
 describe('Reducers', () => {
   describe('GifReducer', () => {
+
     test('should initialize with an empty object as the default state', () => {
       expect(GifReducer(undefined, {})).toEqual({});
     });
+
+    describe('handling the RECEIVE_GIF action', () => {
+      let action, testGif;
+
+      beforeEach(() => {
+        action = 'RECEIVE_GIF';
+        testGif = gif1;
+      });
+
+      test('should replace the state with the action\'s benches', () => {
+        expect(GifReducer(undefined, { type: action, gif: testGif })).toEqual(testGif);
+      });
+
+      test('should not modify the old state', () => {
+        expect(GifReducer(gif2, { type: action, gif: testGif })).toEqual(testGif);
+        expect({ data: {
+            image_url: "https://media.giphy.com/media/SbGtGgkU1J8hq/giphy.gif"
+          } }).toEqual(gif2);
+      });
+    });
+
   });
 });
