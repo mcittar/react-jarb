@@ -10,11 +10,11 @@ class Gif extends React.Component {
   }
 
   render() {
-    let source = 'http://gph.is/1OLGL5d';
-    let gif = <img className="gif" src={ source }></img>;
+    let source = '';
     if (this.props.gif.data){
       source = this.props.gif.data.image_url;
     }
+    let gif = <img className="gif" src={ source }></img>;
     return(
       <section className="gif-container">
         { gif }
