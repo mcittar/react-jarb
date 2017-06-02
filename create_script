@@ -27,15 +27,22 @@ done
 
 # move files from store location to correct director location
 echo "Creating files"
-cp "node_modules/react-jarb/webpack.config.js" ""
 for entry in "node_modules/react-jarb/boilerplate"/*;
 do
   if [ -d "$entry" ]; then
     echo "Creating files for "$(basename $entry)""
     cp -R "$entry"/* "frontend/"$(basename $entry)"/"
   else
-    cp "$entry" frontend/
+    cp "$entry" frontend/..
   fi
 done
+
+
+echo "Adding tests"
+mkdir "frontend/components/__test__"
+cp "node_modules/react-jarb/boilerplate/components/__test__/*" "frontend/components/__test__"
+mkdir "frontend/reducers/__test__"
+cp "node_modules/react-jarb/boilerplate/reducers/__test__/*" "frontend/reducers/__test__"
+
 
 echo "Done."

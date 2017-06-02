@@ -21,5 +21,5 @@ const addScript = () => {
   }
 };
 
-console.log("adding Script");
+console.log("Adding Script");
 addScript();
