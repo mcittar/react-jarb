@@ -1,6 +1,6 @@
 {
   "name": "react-jarb",
-  "version": "0.0.20",
+  "version": "1.0.0",
   "main": "index.js",
   "bin": {
     "react-jarb": "./create_script"

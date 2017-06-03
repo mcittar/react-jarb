@@ -31,7 +31,7 @@ describe('gif container', () => {
     });
 
     test('updates the gif url when props change', () => {
-      gifWrapper.setProps({ gif: gif2 });
+      gifWrapper.find('section').setProps({ gif: gif2 });
       expect(actualGif.props().src).toEqual('https://media.giphy.com/media/SbGtGgkU1J8hq/giphy.gif');
     });
 
