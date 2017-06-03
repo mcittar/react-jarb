@@ -1,20 +1,22 @@
 # README
 ### Quickstart Guide
- 
+
 `npm init -y`
+
 `npm install react-jarb`
+
 `npm run boilerplate`
- 
+
 ### Description
 Just Another React Boilerplate (jarb) is an npm module developed to allow React/Redux users to quickly and easily set up the skeleton and boilerplate for a basic React/Redux framework. The package sets up a webpack configuration, downloads all necessary dependencies, creates Jest/Enzyme test files, creates an organized file system, and provides a working example of React/Redux site that can be edited and further built upon.
- 
+
 ### File Structure
 ```text
 frontend
 ├── actions
 │   └── project_actions.js
 │      
-├── components 
+├── components
 │   ├── __tests__
 │   │     └── components-test.js
 │   ├── gif_container.jsx
@@ -36,36 +38,36 @@ frontend
 └── app.js
 │
 └── Index.html
- 
+
 webpack.config.js
 ```
 
 ### How to use it
-- In a new directory, initialize your package.json by running: 
+- In a new directory, initialize your package.json by running:
 `npm init -y`
- 
+
 - Install react-jarb by running:
 `npm install react-jarb -s`
- 
+
 - The following command will create the necessary file structure and initial boilerplate for your React/Redux project:
 `npm run boilerplate`
- 
- 
+
+
 ### How it works
 React-jarb works by installing all the packages that you would need to get full setup with React/Redux and sets up testing too. On top of adding all this it also parses your package.json file and adds itself to make it so you never have to leave the command-line. It does this by using another npm package called jsonfile.
- 
+
 ```JavaScript
 const addScript = () => {
   try {
     let _package = jsonfile.readFileSync('../../package.json');
- 
+
     if (!_package.scripts) {
       _package.scripts = {};
     }
- 
+
     _package.scripts["boilerplate"] = "react-jarb";
     jsonfile.writeFileSync('../../package.json', _package, {spaces: 2});
- 
+
   } catch (e) {
     throw e;
   }
