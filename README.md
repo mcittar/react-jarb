@@ -1,4 +1,7 @@
 # README
+
+[![npm version](https://badge.fury.io/js/react-jarb.svg)](https://badge.fury.io/js/react-jarb)
+
 ### Quickstart Guide
 
 `npm init -y`
