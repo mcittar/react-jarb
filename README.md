@@ -1,8 +1,6 @@
 # README
 
-[![npm version](https://badge.fury.io/js/react-jarb.svg)](https://badge.fury.io/js/react-jarb)
-
-[![NPM](https://nodei.co/npm/react-jarb.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-jarb/)
+[![npm version](https://badge.fury.io/js/react-jarb.svg)](https://badge.fury.io/js/react-jarb) [![NPM](https://nodei.co/npm/react-jarb.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-jarb/)
 
 ### Quickstart Guide
 
@@ -20,7 +18,7 @@ Just Another React Boilerplate (jarb) is an npm module developed to allow React/
 frontend
 ├── actions
 │   └── project_actions.js
-│      
+│
 ├── components
 │   ├── __tests__
 │   │     └── components-test.js
