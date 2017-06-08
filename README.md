@@ -47,12 +47,15 @@ webpack.config.js
 
 ### How to use it
 - In a new directory, initialize your package.json by running:
+
 `npm init -y`
 
 - Install react-jarb by running:
+
 `npm install react-jarb -s`
 
 - The following command will create the necessary file structure and initial boilerplate for your React/Redux project:
+
 `npm run boilerplate`
 
 
