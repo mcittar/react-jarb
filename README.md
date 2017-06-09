@@ -1,6 +1,8 @@
 # README
 
-[![npm version](https://badge.fury.io/js/react-jarb.svg)](https://badge.fury.io/js/react-jarb) [![NPM](https://nodei.co/npm/react-jarb.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-jarb/)
+[![npm version](https://badge.fury.io/js/react-jarb.svg)](https://badge.fury.io/js/react-jarb)
+
+[![NPM](https://nodei.co/npm/react-jarb.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-jarb/)
 
 ### Quickstart Guide
 
@@ -46,15 +48,15 @@ webpack.config.js
 ```
 
 ### How to use it
-- In a new directory, initialize your package.json by running:
+In a new directory, initialize your package.json by running:
 
 `npm init -y`
 
-- Install react-jarb by running:
+Install react-jarb by running:
 
 `npm install react-jarb -s`
 
-- The following command will create the necessary file structure and initial boilerplate for your React/Redux project:
+The following command will create the necessary file structure and initial boilerplate for your React/Redux project:
 
 `npm run boilerplate`
 
